@@ -1,4 +1,4 @@
-import { CourseListData, LessonsList } from './types';
+import { CourseListData, LessonQuiz, LessonsList } from './types';
 
 export const courseList: CourseListData[] = [
   {
@@ -36,39 +36,6 @@ export const courseList: CourseListData[] = [
     description: 'Learn the basics of databases and SQL with this course',
     imageUrl: 'https://www.example.com/images/database_fundamentals.jpg',
   },
-  {
-    courseId: '0006',
-    courseName: 'JavaScript Essentials',
-    description: 'Master the fundamentals of JavaScript programming',
-    imageUrl: 'https://www.example.com/images/js_essentials.jpg',
-  },
-  {
-    courseId: '0007',
-    courseName: 'Digital Marketing',
-    description:
-      'Learn the basics of digital marketing and boost your online presence',
-    imageUrl: 'https://www.example.com/images/digital_marketing.jpg',
-  },
-  {
-    courseId: '0008',
-    courseName: 'Python for Beginners',
-    description:
-      'Learn Python from scratch and start building your own projects',
-    imageUrl: 'https://www.example.com/images/python_for_beginners.jpg',
-  },
-  {
-    courseId: '0009',
-    courseName: 'Artificial Intelligence',
-    description:
-      'Discover the power of AI and learn how to build intelligent systems',
-    imageUrl: 'https://www.example.com/images/ai.jpg',
-  },
-  {
-    courseId: '0010',
-    courseName: 'Mobile App Design',
-    description: 'Learn how to design beautiful and functional mobile apps',
-    imageUrl: 'https://www.example.com/images/mobile_app_design.jpg',
-  },
 ];
 
 export const lessonsList: LessonsList[] = [
@@ -78,10 +45,12 @@ export const lessonsList: LessonsList[] = [
       {
         lessonId: 'L001',
         lessonName: 'Introduction to React',
+        videoURL: 'https://youtu.be/Y6aYx_KKM7A',
       },
       {
         lessonId: 'L002',
         lessonName: 'Building Components',
+        videoURL: 'https://youtu.be/Ib-80HIjuZ4',
       },
     ],
   },
@@ -91,14 +60,17 @@ export const lessonsList: LessonsList[] = [
       {
         lessonId: 'L001',
         lessonName: 'Getting Started with Angular',
+        videoURL: 'https://youtu.be/novnyCaa7To',
       },
       {
         lessonId: 'L002',
         lessonName: 'Creating Services',
+        videoURL: 'https://youtu.be/novnyCaa7To',
       },
       {
         lessonId: 'L003',
         lessonName: 'Routing and Navigation',
+        videoURL: 'https://youtu.be/novnyCaa7To',
       },
     ],
   },
@@ -108,18 +80,22 @@ export const lessonsList: LessonsList[] = [
       {
         lessonId: 'L001',
         lessonName: 'Fundamentals of HTML',
+        videoURL: 'https://youtu.be/gvkqT_Uoahw',
       },
       {
         lessonId: 'L002',
         lessonName: 'Styling with CSS',
+        videoURL: 'https://youtu.be/gvkqT_Uoahw',
       },
       {
         lessonId: 'L003',
         lessonName: 'Layouts with Flexbox',
+        videoURL: 'https://youtu.be/gvkqT_Uoahw',
       },
       {
         lessonId: 'L004',
         lessonName: 'Responsive Design',
+        videoURL: 'https://youtu.be/gvkqT_Uoahw',
       },
     ],
   },
@@ -129,14 +105,17 @@ export const lessonsList: LessonsList[] = [
       {
         lessonId: 'L001',
         lessonName: 'Introduction to Node.js',
+        videoURL: 'https://youtu.be/F0G9lZ7gecE',
       },
       {
         lessonId: 'L002',
         lessonName: 'Working with Express.js',
+        videoURL: 'https://youtu.be/F0G9lZ7gecE',
       },
       {
         lessonId: 'L003',
         lessonName: 'Building RESTful APIs',
+        videoURL: 'https://youtu.be/F0G9lZ7gecE',
       },
     ],
   },
@@ -146,22 +125,134 @@ export const lessonsList: LessonsList[] = [
       {
         lessonId: 'L001',
         lessonName: 'Introduction to Python',
+        videoURL: 'https://youtu.be/F0G9lZ7gecE',
       },
       {
         lessonId: 'L002',
         lessonName: 'Working with Data Types',
+        videoURL: 'https://youtu.be/F0G9lZ7gecE',
       },
       {
         lessonId: 'L003',
         lessonName: 'Control Flow and Loops',
+        videoURL: 'https://youtu.be/F0G9lZ7gecE',
       },
       {
         lessonId: 'L004',
         lessonName: 'Functions and Modules',
+        videoURL: 'https://youtu.be/F0G9lZ7gecE',
       },
       {
         lessonId: 'L005',
         lessonName: 'Working with Files',
+        videoURL: 'https://youtu.be/F0G9lZ7gecE',
+      },
+    ],
+  },
+];
+
+export const LessonsQuizList: LessonQuiz[] = [
+  {
+    lessonId: 'L001',
+    questions: [
+      {
+        question: 'Pick One Correct Answer ?',
+        choices: ['useRemo', 'useMemo', 'useCameo'],
+        correct: 'useMemo',
+      },
+      {
+        question: 'What is React',
+        choices: [
+          'React is a Public library',
+          'React is a programming Book',
+          'React is a frontend library',
+        ],
+        correct: 'React is a frontend library',
+      },
+      {
+        question: 'What is Javascript ?',
+        choices: ['iceCream', 'Programming Language', 'Cake'],
+        correct: 'Programming Language',
+      },
+    ],
+  },
+  {
+    lessonId: 'L002',
+    questions: [
+      {
+        question: 'What is Redux ?',
+        choices: ['Watch', 'State Management Library', 'Knife'],
+        correct: 'State Management Library',
+      },
+      {
+        question: 'Which is Not FrameWork ?',
+        choices: ['Vanilla JS', 'React', 'Solid JS'],
+        correct: 'Vanilla JS',
+      },
+      {
+        question: 'What is Babel ?',
+        choices: ['Bundler', 'CSS FrameWork', 'Browser API'],
+        correct: 'Bundler',
+      },
+    ],
+  },
+  {
+    lessonId: 'L003',
+    questions: [
+      {
+        question: 'What is Redux ?',
+        choices: ['Watch', 'State Management Library', 'Knife'],
+        correct: 'State Management Library',
+      },
+      {
+        question: 'Which is Not FrameWork ?',
+        choices: ['Vanilla JS', 'React', 'Solid JS'],
+        correct: 'Vanilla JS',
+      },
+      {
+        question: 'What is Babel ?',
+        choices: ['Bundler', 'CSS FrameWork', 'Browser API'],
+        correct: 'Bundler',
+      },
+    ],
+  },
+  {
+    lessonId: 'L004',
+    questions: [
+      {
+        question: 'What is Redux ?',
+        choices: ['Watch', 'State Management Library', 'Knife'],
+        correct: 'State Management Library',
+      },
+      {
+        question: 'Which is Not FrameWork ?',
+        choices: ['Vanilla JS', 'React', 'Solid JS'],
+        correct: 'Vanilla JS',
+      },
+      {
+        question: 'What is Babel ?',
+        choices: ['Bundler', 'CSS FrameWork', 'Browser API'],
+        correct: 'Bundler',
+      },
+    ],
+  },
+  {
+    lessonId: 'L005',
+    questions: [
+      {
+        question: 'What is Redux ?',
+        choices: ['Watch', 'State Management Library', 'Knife'],
+        correct: 'State Management Library',
+      },
+      {
+        question: 'Which is Not FrameWork ?',
+        choices: ['Vanilla JS', 'React', 'Solid JS'],
+        correct: 'Vanilla JS',
+      },
+      {
+        question: 'What is Babel ?',
+        choices: ['Bundler', 'CSS FrameWork', 'Browser API'],
+        correct: 'Bundler',
       },
     ],
   },
