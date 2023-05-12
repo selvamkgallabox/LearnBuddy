@@ -9,6 +9,7 @@ export interface Lesson {
   lessonName: string;
   lessonId: string;
   videoURL?: string;
+  isComplete?: boolean;
 }
 
 export interface LessonsList {
