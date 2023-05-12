@@ -6,16 +6,15 @@ import {
   ModalCloseButton,
   ModalContent,
   ModalOverlay,
-  Spacer,
   VStack,
   useDisclosure,
 } from '@chakra-ui/react';
 import React from 'react';
+import { MdArrowBackIosNew } from 'react-icons/md';
 import ReactPlayer from 'react-player';
+import { useNavigate } from 'react-router-dom';
 import { Layout } from '../Components/Layout';
 import QuizComponent from '../Components/QuizComponent';
-import { useNavigate } from 'react-router-dom';
-import { MdArrowBackIosNew } from 'react-icons/md';
 
 interface VideoAndQuizProps {
   courseId: string;
