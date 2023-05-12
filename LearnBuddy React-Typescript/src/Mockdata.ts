@@ -71,12 +71,6 @@ export const lessonsList: LessonsList[] = [
         videoURL: 'https://youtu.be/novnyCaa7To',
         isComplete: false,
       },
-      {
-        lessonId: 'L003',
-        lessonName: 'Routing and Navigation',
-        videoURL: 'https://youtu.be/novnyCaa7To',
-        isComplete: false,
-      },
     ],
   },
   {
@@ -91,12 +85,6 @@ export const lessonsList: LessonsList[] = [
       {
         lessonId: 'L002',
         lessonName: 'Styling with CSS',
-        videoURL: 'https://youtu.be/gvkqT_Uoahw',
-        isComplete: false,
-      },
-      {
-        lessonId: 'L003',
-        lessonName: 'Layouts with Flexbox',
         videoURL: 'https://youtu.be/gvkqT_Uoahw',
         isComplete: false,
       },
@@ -117,12 +105,6 @@ export const lessonsList: LessonsList[] = [
         videoURL: 'https://youtu.be/F0G9lZ7gecE',
         isComplete: false,
       },
-      {
-        lessonId: 'L003',
-        lessonName: 'Building RESTful APIs',
-        videoURL: 'https://youtu.be/F0G9lZ7gecE',
-        isComplete: false,
-      },
     ],
   },
   {
@@ -137,12 +119,6 @@ export const lessonsList: LessonsList[] = [
       {
         lessonId: 'L002',
         lessonName: 'Working with Data Types',
-        videoURL: 'https://youtu.be/F0G9lZ7gecE',
-        isComplete: false,
-      },
-      {
-        lessonId: 'L003',
-        lessonName: 'Control Flow and Loops',
         videoURL: 'https://youtu.be/F0G9lZ7gecE',
         isComplete: false,
       },
